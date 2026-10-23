@@ -13,7 +13,7 @@
 -   **Commits:** `8da2d3f` ---
     `fix(widget): hide inline panel when closed`; `ce8564a` ---
     `fix(widget): hide closed inline panel from focus`
--   **Status:** Issue closed as completed via PR #120
+-   **Status:** PR #120 merged, as confirmed in the contributor's current activity list. The linked [issue #92](https://github.com/codercops/chatcops/issues/92) currently displays as open; issue state is tracked separately from PR outcome.
 -   **Date completed:** 12 October 2026
 
 ------------------------------------------------------------------------
@@ -149,7 +149,8 @@ the widget behavior.
   Issue                      #92
   PR                         #120
   Maintainer verification    Confirmed fix works
-  Issue closed               Yes, as completed via PR #120
+  PR                         #120 merged per contributor's current activity list
+  Issue                      #92 currently displayed as open
   Build                      Passed
   Full test suite            190/190 passed across 26 files
   Typecheck                  Passed
@@ -157,4 +158,4 @@ the widget behavior.
   Open/closed screenshots    Added to PR description
   AI assistance disclosure   Added
 
-**Contribution #3 complete.**
+**Contribution #3 merged; issue #92 remains open on the current issue page.**

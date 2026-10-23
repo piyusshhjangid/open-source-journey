@@ -1,31 +1,47 @@
-# Contribution #9 — ChatCops: CORS Headers for Error Responses
+# OSS Contribution #9 — ChatCops CORS Headers for Error Responses
+
+## Repository
 
 - **Repository:** [codercops/chatcops](https://github.com/codercops/chatcops)
 - **Issue:** [#158](https://github.com/codercops/chatcops/issues/158)
-- **Pull request:** [#166](https://github.com/codercops/chatcops/pull/166)
+- **Pull Request:** [#166 — fix(server): send CORS header with 400 and 405 error responses](https://github.com/codercops/chatcops/pull/166)
+- **Branch:** Not captured in this record.
+- **Commit:** Not captured in this record.
+- **Merge commit:** Not captured in this record.
 - **Status:** Merged into `dev`
+- **Label:** Not captured
+- **Date:** Not captured
 
-## Problem
+## 1. Problem and requirements
 
-Browser clients need the appropriate CORS headers on error responses as well as successful responses. If an adapter returns an applicable error without those headers, the browser may prevent the client from reading the response, obscuring the useful error details.
+Browser clients need applicable CORS headers on error responses as well as successful responses. Without those headers, a browser can hide useful server error details.
 
-## Work completed
+## 2. Implementation
 
-The contribution made CORS headers consistent for applicable `400` and `405` error responses across the Cloudflare, Vercel, and Express adapters. It supports the default wildcard origin (`*`) or a configured origin.
+Made CORS headers consistent for applicable `400` and `405` responses across the Cloudflare, Vercel, and Express adapters. Supports the default wildcard origin (`*`) or a configured origin while preserving intended error status and response semantics.
 
-The objective was consistent browser-facing behavior without changing the intended error status and response semantics.
+## 3. Validation
 
-## Validation
+The PR notes report tests, workspace build, typecheck, and changeset validation. Exact commands and final CI state are not captured here.
 
-The PR's reported checks included tests, workspace build, typecheck, and changeset validation. For the exact final diff, review discussion, and CI status, see [PR #166](https://github.com/codercops/chatcops/pull/166).
+## 4. Maintainer review
 
-## Skills practised
+Review discussion details are not captured here. See [PR #166](https://github.com/codercops/chatcops/pull/166) for the full review record.
 
-- Cross-adapter API behavior
-- CORS and browser error handling
-- Regression testing for HTTP error paths
-- Following project changeset and validation conventions
+## 5. What I learned
 
-## Reflection
+- Error paths are part of an API public contract. Test success and error responses across adapters so browser clients can read diagnostics consistently.
 
-Error paths are part of an API's public contract. When middleware or adapters behave differently on failures, browser clients can lose access to diagnostic information even if the server generated a useful response. Testing both success and error responses helps keep behavior predictable.
+## 6. Final result
+
+| Item | Result |
+|---|---|
+| Repository | codercops/chatcops |
+| Issue | #158 |
+| Pull request | #166 |
+| Contribution | ChatCops CORS Headers for Error Responses |
+| Status | Merged into `dev` |
+| Outcome | Standardized applicable CORS headers on `400` and `405` responses across three adapters; merged into `dev`. |
+| Validation | The PR notes report tests, workspace build, typecheck, and changeset validation. Exact commands and final CI state are not captured here. |
+
+**Contribution #9 complete.**

@@ -2,19 +2,38 @@
 
 This journal records my open-source contributions, the problems I worked on, my approach to unfamiliar repositories, review feedback, maintainer interactions, validation, and lessons learned.
 
+**Status updated:** 24 October 2026. New merged PRs and the open PR below were transcribed from the contributor's current GitHub activity list and supplied PR page snapshot. Issue associations omitted from that list remain marked for verification.
+
 ## Contribution Index
 
-| # | Repository | Issue | PR | Status | Main skill |
-|---:|---|---|---|---|---|
-| 1 | [free-llm-api-hub](https://github.com/pacocartones/free-llm-api-hub) | [#67](https://github.com/pacocartones/free-llm-api-hub/issues/67) | [#198](https://github.com/pacocartones/free-llm-api-hub/pull/198) | Merged | Data verification, validation, generated artifacts, review |
-| 2 | [ChatCops](https://github.com/codercops/chatcops) | [#94](https://github.com/codercops/chatcops/issues/94) | [#104](https://github.com/codercops/chatcops/pull/104) | Merged into `dev` | TypeScript/DOM, input limits, tests, changesets |
-| 3 | [ChatCops](https://github.com/codercops/chatcops) | [#92](https://github.com/codercops/chatcops/issues/92) | [#120](https://github.com/codercops/chatcops/pull/120) | Merged / issue closed | CSS visibility, accessibility, manual verification |
-| 4 | [ChatCops](https://github.com/codercops/chatcops) | [#60](https://github.com/codercops/chatcops/issues/60) | [#131](https://github.com/codercops/chatcops/pull/131) | Merged into `dev` | Keyboard accessibility, reduced motion, browser verification |
-| 5 | [ChatCops](https://github.com/codercops/chatcops) | [#63](https://github.com/codercops/chatcops/issues/63) | [#132](https://github.com/codercops/chatcops/pull/132) | Merged into `dev` | Express adapter tests, SSE, HTTP responses, review fixes |
-| 6 | [ChatCops](https://github.com/codercops/chatcops) | [#67](https://github.com/codercops/chatcops/issues/67) | [#127](https://github.com/codercops/chatcops/pull/127) | Merged into `dev` | AnalyticsCollector unit tests, mutation testing, defensive behavior |
-| 7 | [OGCops](https://github.com/codercops/ogcops) | [#84](https://github.com/codercops/ogcops/issues/84) | [#143](https://github.com/codercops/ogcops/pull/143) | Merged into `dev` | Template-browser accessibility, ARIA, keyboard interaction |
-| 8 | [Toolbelt](https://github.com/codercops/toolbelt) | [#82](https://github.com/codercops/toolbelt/issues/82) | [#190](https://github.com/codercops/toolbelt/pull/190) | Merged into `develop` | New utility tool, tests, registry integration |
-| 9 | [ChatCops](https://github.com/codercops/chatcops) | [#158](https://github.com/codercops/chatcops/issues/158) | [#166](https://github.com/codercops/chatcops/pull/166) | Merged into `dev` | CORS behavior, adapter consistency, error responses |
+| # | Repository | Issue | PR | PR outcome | Main skill | Record |
+|---:|---|---|---|---|---|---|
+| 1 | [free-llm-api-hub](https://github.com/pacocartones/free-llm-api-hub) | [#67](https://github.com/pacocartones/free-llm-api-hub/issues/67) | [#198](https://github.com/pacocartones/free-llm-api-hub/pull/198) | Merged | Data verification, validation, generated artifacts, review | [Record](contributions/001-free-llm-api-hub-67.md) |
+| 2 | [ChatCops](https://github.com/codercops/chatcops) | [#94](https://github.com/codercops/chatcops/issues/94) | [#104](https://github.com/codercops/chatcops/pull/104) | Merged into `dev` | TypeScript/DOM, input limits, tests, changesets | [Record](contributions/002-chatcops-94.md) |
+| 3 | [ChatCops](https://github.com/codercops/chatcops) | [#92](https://github.com/codercops/chatcops/issues/92) | [#120](https://github.com/codercops/chatcops/pull/120) | Merged per contributor; issue page currently open | CSS visibility, accessibility, manual verification | [Record](contributions/003-chatcops-92.md) |
+| 4 | [ChatCops](https://github.com/codercops/chatcops) | [#60](https://github.com/codercops/chatcops/issues/60) | [#131](https://github.com/codercops/chatcops/pull/131) | Merged into `dev` | Keyboard accessibility, reduced motion, browser verification | [Record](contributions/004-chatcops-60.md) |
+| 5 | [ChatCops](https://github.com/codercops/chatcops) | [#63](https://github.com/codercops/chatcops/issues/63) | [#132](https://github.com/codercops/chatcops/pull/132) | Merged into `dev` | Express adapter tests, SSE, HTTP responses, review fixes | [Record](contributions/005-chatcops-63.md) |
+| 6 | [ChatCops](https://github.com/codercops/chatcops) | [#67](https://github.com/codercops/chatcops/issues/67) | [#127](https://github.com/codercops/chatcops/pull/127) | Merged into `dev` | AnalyticsCollector unit tests, mutation testing, defensive behavior | [Record](contributions/006-chatcops-67.md) |
+| 7 | [OGCops](https://github.com/codercops/ogcops) | [#84](https://github.com/codercops/ogcops/issues/84) | [#143](https://github.com/codercops/ogcops/pull/143) | Merged into `dev` | Template-browser accessibility, ARIA, keyboard interaction | [Record](contributions/007-ogcops-143.md) |
+| 8 | [Toolbelt](https://github.com/codercops/toolbelt) | [#82](https://github.com/codercops/toolbelt/issues/82) | [#190](https://github.com/codercops/toolbelt/pull/190) | Merged into `develop` | New utility tool, tests, registry integration | [Record](contributions/008-toolbelt-190.md) |
+| 9 | [ChatCops](https://github.com/codercops/chatcops) | [#158](https://github.com/codercops/chatcops/issues/158) | [#166](https://github.com/codercops/chatcops/pull/166) | Merged into `dev` | CORS behavior, adapter consistency, error responses | [Record](contributions/009-chatcops-166.md) |
+| 10 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#147](https://github.com/codercops/ogcops/pull/147) | Merged | Gallery search | [Record](contributions/010-ogcops-147.md) |
+| 11 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#150](https://github.com/codercops/ogcops/pull/150) | Merged | Toast and social metadata | [Record](contributions/011-ogcops-150.md) |
+| 12 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#174](https://github.com/codercops/ogcops/pull/174) | Merged | Template implementation | [Record](contributions/012-ogcops-174.md) |
+| 13 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#187](https://github.com/codercops/ogcops/pull/187) | Merged | Preview failure state | [Record](contributions/013-ogcops-187.md) |
+| 14 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#188](https://github.com/codercops/ogcops/pull/188) | Merged | Keyboard accessibility | [Record](contributions/014-ogcops-188.md) |
+| 15 | [ChatCops](https://github.com/codercops/chatcops) | See PR | [#294](https://github.com/codercops/chatcops/pull/294) | Merged | Cross-origin E2E tests | [Record](contributions/015-chatcops-294.md) |
+| 16 | [ChatCops](https://github.com/codercops/chatcops) | See PR | [#309](https://github.com/codercops/chatcops/pull/309) | Merged | Documentation | [Record](contributions/016-chatcops-309.md) |
+| 17 | [Discord Bot](https://github.com/codercops/discord-bot) | See PR | [#75](https://github.com/codercops/discord-bot/pull/75) | Merged | Merge-time accounting | [Record](contributions/017-discord-bot-75.md) |
+| 18 | [Toolbelt](https://github.com/codercops/toolbelt) | See PR | [#261](https://github.com/codercops/toolbelt/pull/261) | Merged | Failure-state input preservation | [Record](contributions/018-toolbelt-261.md) |
+| 19 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#198](https://github.com/codercops/ogcops/pull/198) | Merged | Ecommerce template | [Record](contributions/019-ogcops-198.md) |
+| 20 | [OGCops](https://github.com/codercops/ogcops) | See PR | [#200](https://github.com/codercops/ogcops/pull/200) | Merged | Player progress validation | [Record](contributions/020-ogcops-200.md) |
+
+This index covers 20 merged issue-linked contribution PRs supplied or documented by the contributor; each has a dedicated record in the final column. Issue numbers for PRs #147, #150, #174, #187, #188, #198, #200, #261, #294, #309 and Discord Bot #75 were not present in the supplied activity list and remain to be copied from each PR's Development section. ChatCops #92 / PR #120 is recorded as merged per the contributor; the linked issue page currently displays open. The ChatCops release PR [#145](https://github.com/codercops/chatcops/pull/145) is excluded to avoid double-counting bundled work. PR outcome and issue open/closed state are tracked separately.
+
+## Open Pull Request: OGCops #226 / PR #239
+
+PR [#239 — Podcast Top Episodes template](https://github.com/codercops/ogcops/pull/239) is open and awaits an approving review. The supplied page snapshot showed all three checks passing. It links issue [#226](https://github.com/codercops/ogcops/issues/226), adds a ranked list of up to three episodes, and has five focused tests passing. The full suite reported 1,011 passing tests plus one unrelated PNG/SVG rendering timeout. `npm run check`, build, and `git diff --check` passed. The PR description still contains placeholders for local visual checks and its screenshot description. Detailed live record: [OGCops PR #239](in-progress/001-ogcops-239-podcast-top-episodes.md).
 
 ## Latest Milestone: ChatCops #158 — CORS Headers for Error Responses
 
@@ -97,7 +116,7 @@ Detailed record: [Contribution #4 — ChatCops #60](contributions/004-chatcops-6
 
 ## ChatCops #92 — Inline Panel Visibility
 
-PR #120 was merged into `codercops:dev` as commit `fb49364`, and issue #92 was closed as completed. The PR received the `hacktoberfest-accepted` label.
+PR #120 was merged into `codercops:dev` as commit `fb49364`, according to the contributor's current activity list. The PR received the `hacktoberfest-accepted` label. The linked issue #92 currently displays as open on GitHub, so PR merge status and issue state are recorded separately.
 
 The fix ensures the inline chat panel is hidden when `close()` is called, including removal from keyboard focus, while preserving the inline layout and popup animations. The maintainer independently verified the behavior. The PR page reports zero GitHub checks; the following validation is contributor-reported local validation:
 

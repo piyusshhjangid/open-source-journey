@@ -1,40 +1,47 @@
-# Contribution #8 — Toolbelt: Unix Timestamp Converter
+# OSS Contribution #8 — Toolbelt Unix Timestamp Converter
+
+## Repository
 
 - **Repository:** [codercops/toolbelt](https://github.com/codercops/toolbelt)
 - **Issue:** [#82](https://github.com/codercops/toolbelt/issues/82)
-- **Pull request:** [#190](https://github.com/codercops/toolbelt/pull/190)
-- **Route:** `/timestamp-converter`
+- **Pull Request:** [#190 — feat: add Unix timestamp converter](https://github.com/codercops/toolbelt/pull/190)
+- **Branch:** Not captured in this record.
+- **Commit:** Not captured in this record.
+- **Merge commit:** Not captured in this record.
 - **Status:** Merged into `develop`
 - **Label:** `hacktoberfest-accepted`
+- **Date:** Not captured
 
-## Goal
+## 1. Problem and requirements
 
-Add a utility that makes it easy to convert between Unix timestamps and human-readable dates, while helping users avoid confusion about timestamp units and time zones.
+Users needed a utility for converting Unix timestamps and human-readable dates while avoiding confusion about timestamp units and time zones.
 
-## Work completed
+## 2. Implementation
 
-The tool includes:
+Added conversion between epoch timestamps and dates; automatic and manual timestamp-unit detection; UTC, local-time, ISO, and relative-time displays; converter tests; tool-registry integration; an OG image route; and an issue template. The tool is available at `/timestamp-converter`.
 
-- Conversion between epoch timestamps and dates.
-- Automatic and manual timestamp-unit detection.
-- UTC, local-time, ISO, and relative-time displays.
-- Tests for the converter behavior.
-- Integration with the tool registry.
-- An OG image route and an issue template.
+## 3. Validation
 
-The exact final implementation and review discussion are available in [PR #190](https://github.com/codercops/toolbelt/pull/190).
+The contribution notes report 322 tests, lint/build checks, and diff checks. Exact commands and final CI state are not captured here; consult the PR.
 
-## Validation
+## 4. Maintainer review
 
-The PR's reported validation included **322 tests**, lint/build checks, and diff checks. These are recorded as reported in the contribution context; consult the PR for the precise commands and final CI state.
+Review discussion details are not captured here. See [PR #190](https://github.com/codercops/toolbelt/pull/190) for the review record.
 
-## Skills practised
+## 5. What I learned
 
-- Implementing a complete utility within an existing project
-- Handling timestamps, units, and time-zone representations
-- Integrating a new tool into a registry and related project conventions
-- Adding tests and checking build/lint results
+- Time tools should make units and time zones explicit. Automatic detection is convenient, while manual selection helps resolve ambiguous inputs.
 
-## Reflection
+## 6. Final result
 
-Time conversion interfaces should make units and time zones explicit. Automatic detection is convenient, but providing a manual choice helps users recover when an input is ambiguous.
+| Item | Result |
+|---|---|
+| Repository | codercops/toolbelt |
+| Issue | #82 |
+| Pull request | #190 |
+| Contribution | Toolbelt Unix Timestamp Converter |
+| Status | Merged into `develop` |
+| Outcome | Added the Unix Timestamp Converter at `/timestamp-converter`; merged into `develop`. |
+| Validation | The contribution notes report 322 tests, lint/build checks, and diff checks. Exact commands and final CI state are not captured here; consult the PR. |
+
+**Contribution #8 complete.**
