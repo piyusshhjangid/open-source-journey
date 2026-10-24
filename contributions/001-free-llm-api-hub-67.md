@@ -1,17 +1,17 @@
-# OSS Contribution #1 — free-llm-api-hub
+# OSS Contribution #1 — Free LLM API Hub Datalab Verification
 
 ## Repository
 
-**Repository:** `pacocartones/free-llm-api-hub`  
-**Technology:** JSON / Node.js / npm / Git / GitHub Actions  
-**Issue:** #67 — Verify Datalab `phone_required`  
-**Pull Request:** #198  
-**Status:** Merged  
+**Repository:** `pacocartones/free-llm-api-hub`
+**Technology:** JSON / Node.js / npm / Git / GitHub Actions
+**Issue:** #67 — Verify Datalab `phone_required`
+**Pull Request:** #198
+**Status:** Merged; issue #67 closed as completed
 **Date:** October 2026
 
 ---
 
-## 1. Problem
+## 1. Problem and requirements
 
 The Datalab provider entry in `data/providers.json` had:
 
@@ -25,7 +25,7 @@ The issue required verifying whether a phone number was necessary to create an a
 
 ---
 
-## 2. My Understanding
+### My Understanding
 
 The repository uses `data/providers.json` as the single source of truth.
 
@@ -41,7 +41,9 @@ The contribution needed to:
 
 ---
 
-## 3. Verification
+## 2. Implementation
+
+### Verification
 
 I tested Datalab's signup flow using the **Continue with Google** option.
 
@@ -65,7 +67,7 @@ The verification date was recorded as:
 
 ---
 
-## 4. Git Workflow
+### Git Workflow
 
 ### Fork
 
@@ -104,7 +106,7 @@ git fetch upstream
 
 ---
 
-## 5. Source Change
+### Source Change
 
 Located the Datalab entry in:
 
@@ -128,7 +130,7 @@ Also updated the verification date and added a note explaining how the informati
 
 ---
 
-## 6. Validation
+## 3. Validation
 
 Validated the JSON:
 
@@ -154,29 +156,7 @@ I updated the generated date and regenerated the derived artifacts.
 
 ---
 
-## 7. Repository Discovery
-
-The repository does not treat `data/providers.json` as the only tracked output.
-
-It automatically generates things such as:
-
-- README tables
-- freshness badges
-- collections
-- website data
-- fingerprints
-- sitemap
-- OG assets
-
-The contribution instructions require these generated artifacts to remain synchronized.
-
-### Lesson
-
-Before modifying a repository, understand which files are source-of-truth files and which files are generated.
-
----
-
-## 8. Tests
+### Tests
 
 Ran:
 
@@ -216,7 +196,9 @@ All passed successfully.
 
 ---
 
-## 9. Review Feedback
+## 4. Maintainer review
+
+### Review Feedback
 
 After opening PR #198, CodeRabbit identified two issues.
 
@@ -252,7 +234,7 @@ Final result:
 
 ---
 
-## 10. Git Commits
+### Git Commits
 
 Initial contribution:
 
@@ -270,7 +252,7 @@ fix: correct Datalab rate limit
 
 ---
 
-## 11. Pull Request
+### Pull Request
 
 **PR:** #198
 
@@ -286,7 +268,7 @@ The PR was reviewed and approved by the maintainer.
 
 ---
 
-## 12. Maintainer Interaction
+### Maintainer Interaction
 
 The maintainer confirmed that:
 
@@ -301,7 +283,31 @@ Issue #67 was subsequently closed as completed.
 
 ---
 
-## 13. Branch Drift / CI Lesson
+## 5. What I learned
+
+### Repository Discovery
+
+The repository does not treat `data/providers.json` as the only tracked output.
+
+It automatically generates things such as:
+
+- README tables
+- freshness badges
+- collections
+- website data
+- fingerprints
+- sitemap
+- OG assets
+
+The contribution instructions require these generated artifacts to remain synchronized.
+
+### Lesson
+
+Before modifying a repository, understand which files are source-of-truth files and which files are generated.
+
+---
+
+### Branch Drift / CI Lesson
 
 During the PR process, a later merge into `main` changed the repository's derived-fingerprint/drift-gate behavior.
 
@@ -321,7 +327,7 @@ A change can be correct when submitted but still encounter conflicts or CI failu
 
 ---
 
-## 14. What I Learned
+### What I Learned
 
 ### Git
 
@@ -367,7 +373,7 @@ A change can be correct when submitted but still encounter conflicts or CI failu
 
 ---
 
-## 15. What I Did Well
+### What I Did Well
 
 - Chose a small, clearly scoped issue.
 - Verified the information myself.
@@ -382,7 +388,7 @@ A change can be correct when submitted but still encounter conflicts or CI failu
 
 ---
 
-## 16. What I Need to Improve
+### What I Need to Improve
 
 This was primarily a **data contribution**, not a code contribution.
 
@@ -399,7 +405,7 @@ For my next contribution I should learn more about:
 
 ---
 
-## 17. Final Result
+## 6. Final result
 
 | Item | Result |
 |---|---|

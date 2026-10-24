@@ -1,19 +1,19 @@
-# OSS Contribution #2 — ChatCops
+# OSS Contribution #2 — ChatCops Pre-Chat and Message Length Limits
 
 ## Repository
 
-**Repository:** [`codercops/chatcops`](https://github.com/codercops/chatcops)  
-**Technology:** TypeScript / JavaScript / DOM APIs / Vitest / pnpm workspace / Changesets  
-**Issue:** [#94 — Limit pre-chat and message length to what the server accepts](https://github.com/codercops/chatcops/issues/94)  
-**Pull Request:** [#104 — fix(widget): enforce server input length limits](https://github.com/codercops/chatcops/pull/104)  
-**Branch:** `fix/widget-input-maxlength`  
-**Commit:** `24cfbd2` — `fix(widget): enforce server input length limits`  
-**Status:** Approved and merged into `dev`  
+**Repository:** [`codercops/chatcops`](https://github.com/codercops/chatcops)
+**Technology:** TypeScript / JavaScript / DOM APIs / Vitest / pnpm workspace / Changesets
+**Issue:** [#94 — Limit pre-chat and message length to what the server accepts](https://github.com/codercops/chatcops/issues/94)
+**Pull Request:** [#104 — fix(widget): enforce server input length limits](https://github.com/codercops/chatcops/pull/104)
+**Branch:** `fix/widget-input-maxlength`
+**Commit:** `24cfbd2` — `fix(widget): enforce server input length limits`
+**Status:** Approved and merged into `dev`; issue #94 closed as completed
 **Date:** October 2026
 
 ---
 
-## 1. Problem
+## 1. Problem and requirements
 
 The widget's pre-chat fields and chat message textarea did not set client-side maximum lengths to match the server's request validation. That meant users could enter more text than the server accepted and then encounter a rejected request.
 
@@ -48,6 +48,15 @@ In `packages/widget/src/dom/input.ts`:
 - Added `packages/widget/tests/dom/input.test.ts` to assert that the chat textarea has `maxLength === 10_000`.
 - Added a patch changeset for `@chatcops/widget`.
 
+### Git Workflow
+
+- Worked on branch `fix/widget-input-maxlength`.
+- Reviewed the diff and staged only the intended five files.
+- Ran the build, all tests, type checking, focused widget tests, and whitespace check.
+- Added a Changesets patch entry for `@chatcops/widget`.
+- Committed as `24cfbd2` and pushed the branch to my fork.
+- Opened PR #104 against the upstream `dev` branch.
+
 ## 3. Validation
 
 The following commands passed:
@@ -59,10 +68,10 @@ pnpm -r typecheck
 git diff --check
 ```
 
-Full test result: **170 tests passed across 25 test files**.  
+Full test result: **170 tests passed across 25 test files**.
 Focused widget result: **17 tests passed across 2 test files**.
 
-## 4. Manual Testing
+### Manual Testing
 
 I manually confirmed that the pre-chat Message field stopped at 500 characters.
 
@@ -70,16 +79,9 @@ The demo's configured endpoint was `http://localhost:3001/chat`, but no server w
 
 The mock-backed widget flow returned simulated replies for a normal message and for a message containing 10,000 characters. The returned mock response reported `10000` characters. This validated the local widget request/response flow, **not** a live AI-provider integration.
 
-## 5. Git Workflow
+## 4. Maintainer review
 
-- Worked on branch `fix/widget-input-maxlength`.
-- Reviewed the diff and staged only the intended five files.
-- Ran the build, all tests, type checking, focused widget tests, and whitespace check.
-- Added a Changesets patch entry for `@chatcops/widget`.
-- Committed as `24cfbd2` and pushed the branch to my fork.
-- Opened PR #104 against the upstream `dev` branch.
-
-## 6. Maintainer Review
+### Maintainer Review
 
 Anurag Verma approved and merged PR #104 into `dev`.
 
@@ -89,7 +91,9 @@ The maintainer's review said:
 
 This feedback confirmed that the named constants, links to the validation schema, and tests matched the intended approach.
 
-## 7. What I Learned
+## 5. What I learned
+
+### What I Learned
 
 ### Frontend and API consistency
 
@@ -116,7 +120,7 @@ This feedback confirmed that the named constants, links to the validation schema
 - Check the configured API URL and whether the expected port is listening.
 - A local mock can verify request/response handling without API credentials, but it must not be described as a live provider test.
 
-## 8. What I Did Well
+### What I Did Well
 
 - Kept the implementation limited to the requested client-side constraints.
 - Used named constants and referenced the server's schema.
@@ -127,7 +131,7 @@ This feedback confirmed that the named constants, links to the validation schema
 - Addressed formatting and staged-diff noise before committing.
 - Received maintainer approval and got the PR merged.
 
-## 9. What I Can Improve
+### What I Can Improve
 
 - Become more independent at tracing data from the widget through the server validation path.
 - Get more practice writing tests without relying heavily on step-by-step guidance.
@@ -135,7 +139,7 @@ This feedback confirmed that the named constants, links to the validation schema
 - Continue practising browser DevTools and network debugging.
 - For future changes, test behavior at boundaries (499/500/501 and 9,999/10,000/10,001) where practical, while keeping validation aligned with the repository's requirements.
 
-## 10. Final Result
+## 6. Final result
 
 | Item | Result |
 |---|---|

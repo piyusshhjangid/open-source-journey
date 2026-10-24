@@ -8,7 +8,7 @@
 - **Branch:** `fix/widget-accessibility-motion`
 - **Commit:** `e6ad46f` — `fix(widget): improve accessibility and reduced motion`
 - **Merge commit:** `19d4d7a`
-- **Status:** Approved and merged into `dev`; issue addressed
+- **Status:** Approved and merged into `dev`; issue #60 closed as completed
 - **Label:** `hacktoberfest-accepted`
 - **Date:** October 2026
 

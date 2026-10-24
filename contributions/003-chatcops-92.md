@@ -1,4 +1,4 @@
-# OSS Contribution #3 --- ChatCops Inline Panel Visibility
+# OSS Contribution #3 — ChatCops Inline Panel Visibility
 
 ## Repository
 
@@ -18,7 +18,7 @@
 
 ------------------------------------------------------------------------
 
-## 1. Problem
+## 1. Problem and requirements
 
 In inline mode, calling `close()` left the panel visually present or not
 fully hidden. Removing opacity and pointer-event overrides allowed the
@@ -26,7 +26,7 @@ fully hidden. Removing opacity and pointer-event overrides allowed the
 could still remain in the keyboard tab order and be exposed to screen
 readers.
 
-## 2. Requirements
+### Requirements
 
 The issue asked for the inline panel to hide when `close()` is called,
 while preserving existing layout and popup open/close animations. The
@@ -34,7 +34,7 @@ maintainer also requested screenshots or a short before/after recording
 from inline mode and completion of the PR template's AI-assistance
 section.
 
-## 3. Implementation
+## 2. Implementation
 
 ### CSS behavior
 
@@ -59,7 +59,9 @@ layout were preserved.
 Added a patch changeset for `@chatcops/widget`, as requested by the
 issue.
 
-## 4. Validation
+## 3. Validation
+
+### Validation
 
 The following checks passed:
 
@@ -84,7 +86,7 @@ The maintainer independently tested inline mode and confirmed that the
 panel was hidden after `close()`, could not be focused, and returned
 after `open()`.
 
-## 5. Screenshots
+### Screenshots
 
 -   **Open state:** [View
     screenshot](https://github.com/user-attachments/assets/6da7350b-b2b4-449a-bdb9-58729cccd019)
@@ -94,7 +96,9 @@ after `open()`.
 These screenshots were added to the PR description as manual
 verification evidence.
 
-## 6. Review Feedback
+## 4. Maintainer review
+
+### Review Feedback
 
 The maintainer agreed that removing the CSS overrides was the correct
 first step, but pointed out that `opacity: 0` and `pointer-events: none`
@@ -106,14 +110,16 @@ The maintainer confirmed that the fix worked. After the requested
 AI-assistance section was added to the PR description, issue #92 was
 closed as completed via PR #120.
 
-## 7. AI Assistance Disclosure
+### AI Assistance Disclosure
 
 I used ChatGPT for debugging guidance, understanding CSS visibility and
 focus behavior, and planning validation. I reviewed and applied the code
 changes, ran the build, tests, and type checks, and manually verified
 the widget behavior.
 
-## 8. What I Learned
+## 5. What I learned
+
+### What I Learned
 
 ### CSS and accessibility
 
@@ -142,9 +148,9 @@ the widget behavior.
 -   Keep validation results and manual testing claims specific and
     reproducible.
 
-## 9. Final Result
+## 6. Final result
 
-  Item                       Result
+Item                       Result
   -------------------------- --------------------------------
   Issue                      #92
   PR                         #120

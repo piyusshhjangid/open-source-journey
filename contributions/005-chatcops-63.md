@@ -16,7 +16,7 @@
 
 The Express adapter needed focused unit tests for HTTP response behavior, CORS preflight handling, Server-Sent Events (SSE) formatting, completion, and handler failures. The existing analytics test also had to remain intact, including its assertion that the interval spy is called exactly once.
 
-## 2. Tests added
+## 2. Implementation
 
 File: `packages/server/tests/adapters/express.test.ts`
 
@@ -29,19 +29,7 @@ Four tests were added while preserving the original analytics-handler test:
 
 The original `expect(setIntervalSpy).toHaveBeenCalledTimes(1);` assertion was restored and retained. This protects the existing expectation that middleware and the analytics handler share one chat handler.
 
-## 3. Review feedback and fixes
-
-The maintainer said the tests were good and deliberately broke the adapter in multiple ways to assess whether the tests detected regressions. The initial review requested three file-level corrections:
-
-- Restore the original `setIntervalSpy` assertion.
-- Preserve the repository's single-quote formatting and avoid unrelated formatting changes.
-- Remove a UTF-8 byte-order mark (BOM) at the start of the file.
-
-I addressed these points in follow-up commits. The final BOM removal was verified locally with PowerShell. The final diff showed only the intended test additions rather than unrelated formatting churn.
-
-The maintainer then confirmed that the diff contained only additions, the single-quote style was preserved, the BOM was gone, and the analytics assertion was back. The maintainer reported breaking the adapter in nine ways—including status codes, a CORS header, SSE headers, chunk formatting, `[DONE]`, the error event, and `res.end()`—and said each mutation made a test fail.
-
-## 4. Validation
+## 3. Validation
 
 Locally verified:
 
@@ -60,6 +48,18 @@ The PR description reports these additional repository checks:
 - `pnpm -r typecheck` — passed.
 - `pnpm -r build` — passed.
 - GitHub checks — 3 passed.
+
+## 4. Maintainer review
+
+The maintainer said the tests were good and deliberately broke the adapter in multiple ways to assess whether the tests detected regressions. The initial review requested three file-level corrections:
+
+- Restore the original `setIntervalSpy` assertion.
+- Preserve the repository's single-quote formatting and avoid unrelated formatting changes.
+- Remove a UTF-8 byte-order mark (BOM) at the start of the file.
+
+I addressed these points in follow-up commits. The final BOM removal was verified locally with PowerShell. The final diff showed only the intended test additions rather than unrelated formatting churn.
+
+The maintainer then confirmed that the diff contained only additions, the single-quote style was preserved, the BOM was gone, and the analytics assertion was back. The maintainer reported breaking the adapter in nine ways—including status codes, a CORS header, SSE headers, chunk formatting, `[DONE]`, the error event, and `res.end()`—and said each mutation made a test fail.
 
 ## 5. What I learned
 
