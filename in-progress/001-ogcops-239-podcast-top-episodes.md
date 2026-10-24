@@ -1,29 +1,59 @@
-# In-progress Contribution — OGCops Podcast Top Episodes Template
+# In-Progress PR — OGCops Podcast Top Episodes Template
 
-- **Repository:** [codercops/ogcops](https://github.com/codercops/ogcops)
-- **Issue:** [#226](https://github.com/codercops/ogcops/issues/226)
-- **Pull request:** [#239 — feat(templates): add podcast top episodes card](https://github.com/codercops/ogcops/pull/239)
+## Repository
+
+- **Repository:** [`codercops/ogcops`](https://github.com/codercops/ogcops)
+- **Issue:** [#226 — Add the Top Episodes podcast template (`podcast-top-episodes`)](https://github.com/codercops/ogcops/issues/226) (open)
+- **Pull Request:** [#239 — feat(templates): add podcast top episodes card](https://github.com/codercops/ogcops/pull/239)
 - **Branch:** `codex/226-podcast-top-episodes`
-- **Commit:** `2e9a775` — `feat(templates): add podcast top episodes card`
-- **Status:** Open; awaiting an approving review. Three checks are passing.
-- **Last status supplied:** 24 October 2026
+- **Commit:** `2e9a775`
+- **Merge commit:** Not merged.
+- **Status:** Open; latest maintainer review requested changes.
+- **Date opened:** 23 October 2026
+- **Last checked:** 24 October 2026
 
-## Change summary
+## 1. Problem and requirements
 
-Adds a `podcast-top-episodes` template with a ranked list of up to three episodes. Blank titles are skipped and ranks remain consecutive. Long titles truncate to one line; durations stay in a fixed right-hand column and blank durations are hidden. Light backgrounds use a darkened accent for readable rank numbers.
+Issue #226 requests a podcast Top Episodes template that presents up to three ranked episodes and handles optional fields, long text, and shared template conventions.
 
-## Validation reported in the PR
+## 2. Implementation
+
+Adds `podcast-top-episodes` with up to three ranked episodes. Blank titles are skipped while ranks remain consecutive. Long titles truncate to one line, durations stay in a fixed right-hand column, blank durations are hidden, and light backgrounds use a darkened accent for readable rank numbers.
+
+## 3. Validation
+
+The PR reports:
 
 - `npm run check` — 0 errors, 0 warnings, 10 hints.
-- Focused template test — 5 passed.
-- Full suite — 1,011 passed; the unrelated agenda PNG/SVG rendering test timed out after 5 seconds, including when run alone.
-- `npm run build` — passed.
-- `git diff --check` — passed.
+- Focused test `npm run test -- tests/templates/top-episodes.test.ts` — 5 passed.
+- Full `npm run test` — 1,011 passed; one unrelated agenda PNG/SVG rendering test timed out after 5 seconds, including when run alone.
+- `npm run build` and `git diff --check` — passed.
+- The latest maintainer review reports the check, tests, and build pass.
 
-## Review and remaining work
+## 4. Maintainer review
 
-- GitHub reports all three checks passing and requires at least one approving review; no review had been submitted in the supplied status snapshot.
-- The PR description still has placeholders for local visual checks and the attached screenshot description. Replace those with the actual verification notes before review.
-- The PR mentions [Toolbelt #302](https://github.com/codercops/toolbelt/pull/302), an unrelated Markdown Live Preview PR; it is not counted as the contributor's PR.
+Anurag629 reviewed the latest version and requested four changes:
 
-Update this file when the PR receives review, changes state, or merges. Move it into `contributions/` and assign the next contribution number only after merge.
+1. Use singular “EPISODE” when exactly one episode is shown.
+2. Hide the show-name row, including its accent dot, when the show name is empty.
+3. Keep long durations on one line and truncate them within the fixed column.
+4. Replace the two local visual-check and screenshot-description placeholders in the PR body with accurate notes.
+
+The review says the default template still renders as before and the tests pass. The PR is not approved yet; these changes and a new review remain outstanding.
+
+## 5. What I learned
+
+- A contribution is not ready for review simply because automated checks pass; reviewer feedback and accurate PR notes are part of the work.
+- Optional labels, singular/plural text, and unusually long values are useful rendered-state edge cases for templates.
+
+## 6. Current result
+
+| Item | Result |
+|---|---|
+| Repository | `codercops/ogcops` |
+| Linked issue | #226, open |
+| Pull request | #239, open |
+| Latest review | Changes requested |
+| Required next action | Address the four review items above, update the PR notes, rerun checks, and request another review |
+
+**Contribution #21 is in progress; it is not included in the merged total.**

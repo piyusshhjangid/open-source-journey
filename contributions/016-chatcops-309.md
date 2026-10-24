@@ -3,45 +3,45 @@
 ## Repository
 
 - **Repository:** [codercops/chatcops](https://github.com/codercops/chatcops)
-- **Issue:** Not listed in the supplied contribution record; verify in the PR Development section.
+- **Issue:** [#70 — Document the pre-chat form](https://github.com/codercops/chatcops/issues/70) (closed as completed)
 - **Pull Request:** [#309 — docs: document pre-chat form](https://github.com/codercops/chatcops/pull/309)
-- **Branch:** Not captured in the supplied record.
-- **Commit:** Not captured in the supplied record.
-- **Merge commit:** Not captured in the supplied record.
-- **Status:** Merged, according to the contributor supplied activity list.
-- **Label:** Not captured in the supplied record.
-- **Date:** Not captured in the supplied record.
+- **Branch:** `docs/70-pre-chat-form`
+- **Commit:** `b165267`
+- **Merge commit:** `7cc0c9c`
+- **Status:** Merged into `dev`; issue #70 closed as completed
+- **Label:** Not recorded in the PR summary.
+- **Date:** 22 October 2026
 
 ## 1. Problem and requirements
 
-Users needed documentation for the pre-chat form. The supplied PR title establishes the documentation scope.
+Users needed a guide explaining pre-chat form configuration, behavior, and integration points in the widget and server.
 
 ## 2. Implementation
 
-Documented the pre-chat form. The supplied activity list does not include the documented configuration options, usage examples, or file locations.
+Added a Widget guide covering form fields, validation, welcome-message personalization, first-message behavior, answer persistence, server limits, `onPreChatSubmit`, and the `preChatSubmit` event. Linked it in the Widget sidebar and WidgetConfig reference and from Server Setup.
 
 ## 3. Validation
 
-Test commands, CI results, and manual checks were not included in the supplied activity list. See the linked PR for its checks and validation evidence.
+`pnpm --filter @chatcops/website build` and `git diff --check` passed. No changeset was needed for documentation-only changes. The maintainer checked the guide against the implementation, types, callback signatures, and event anchor, and reported the site build passing.
 
 ## 4. Maintainer review
 
-Review comments and approval details were not included in the supplied activity list. See [PR #309](https://github.com/codercops/chatcops/pull/309) for the review record.
+Anurag629 approved after confirming the documented options and validation matched `PreChatField`/`PreChatFormConfig` and the implementation, including trimmed values, email checks, callbacks, and event links.
 
 ## 5. What I learned
 
-- Feature documentation should explain setup and user-facing behavior, with examples that match current options.
-- Use the PR diff and conversation as the source of truth for precise implementation and review history.
+- Documentation should be checked against current types and runtime behavior, with links tested in the built site.
 
 ## 6. Final result
 
 | Item | Result |
 |---|---|
-| Repository | codercops/chatcops |
-| Issue | Not recorded in supplied activity |
-| Pull request | #309 |
+| Repository | `codercops/chatcops` |
+| Issue | [#70](https://github.com/codercops/chatcops/issues/70), closed |
+| Pull request | [#309](https://github.com/codercops/chatcops/pull/309), merged |
 | Contribution | ChatCops Pre-Chat Form Documentation |
-| Status | Merged |
-| Validation and review evidence | Refer to the linked PR |
+| Merge target | `chatcops`:`dev` |
+| Merge date | 22 October 2026 |
+| Validation | PR and maintainer-reported results summarized above |
 
 **Contribution #16 complete.**
