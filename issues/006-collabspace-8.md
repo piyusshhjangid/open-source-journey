@@ -4,7 +4,7 @@
 
 - **Repository:** [piyusshhjangid/CollabSpace](https://github.com/piyusshhjangid/CollabSpace)
 - **Issue:** [#8 — [GitHub] Verify and idempotently process webhook events](https://github.com/piyusshhjangid/CollabSpace/issues/8)
-- **Status:** open (checked 27 October 2026)
+- **Status:** open (checked 1 November 2026)
 - **Created:** 2026-10-26
 - **Last updated:** 2026-10-26
 - **Labels:** `enhancement`

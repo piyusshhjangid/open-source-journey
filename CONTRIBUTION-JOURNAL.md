@@ -3,23 +3,23 @@
 This is the complete record of my open-source work: merged contributions, currently open pull requests, closed attempts, and issues in my own public project, CollabSpace.
 
 **GitHub account:** [@piyusshhjangid](https://github.com/piyusshhjangid)
-**Status checked:** 27 October 2026 using GitHub-authored pull request search, PR metadata and descriptions, current reviews, CollabSpace issue pages, and issue comments.
+**Status checked:** 1 November 2026 using GitHub-authored pull request search, PR metadata and descriptions, current reviews, CollabSpace issue pages, and issue comments.
 
 ## Snapshot
 
-- **37 merged PRs** across 7 repositories.
-- **1 open PR:** OGCops #287. ChatCops #379 merged on 27 October.
+- **52 merged PRs** across 7 repositories.
+- **2 open PRs:** ChatCops #538 and #539.
 - **3 closed without merge:** two fork-side ChatCops PRs and one superseded upstream ChatCops PR. They are kept in pr-history/ and excluded from the merged total.
-- **13 open CollabSpace issues** (#3–#15), each tracked in issues/.
-- GitHub's authored PR search returned **41 PRs** in total; the above outcomes account for all 41.
+- **17 open authored issues:** 13 CollabSpace roadmap issues plus ChatCops #532, #536, #542 and Discord Bot #108.
+- GitHub's authored PR search returned **57 PRs** in total; the above outcomes account for all 57.
 
 ### Merged contributions by repository
 
 - **free-llm-api-hub:** 1
-- **ChatCops:** 18
-- **OGCops:** 12
+- **ChatCops:** 30
+- **OGCops:** 14
 - **Toolbelt:** 2
-- **Discord Bot:** 1
+- **Discord Bot:** 2
 - **PrepFlow:** 2
 - **CollabSpace:** 1
 
@@ -66,22 +66,45 @@ Each merged PR has its own record in contributions/. Validation notes come from 
 | 35 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#376 — feat(widget): add Chinese locale](https://github.com/codercops/chatcops/pull/376) | Merged (2026-10-27) | [Record](contributions/035-chatcops-376.md) |
 | 36 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#377 — feat(widget): add Japanese locale](https://github.com/codercops/chatcops/pull/377) | Merged (2026-10-27) | [Record](contributions/036-chatcops-377.md) |
 | 37 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#379 — feat(widget): add Arabic locale](https://github.com/codercops/chatcops/pull/379) | Merged (2026-10-27) | [Record](contributions/037-chatcops-379.md) |
+| 38 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#384 — feat(widget): add Portuguese locale](https://github.com/codercops/chatcops/pull/384) | Merged (2026-10-28) | [Record](contributions/038-chatcops-384.md) |
+| 39 | OGCops | [#285](https://github.com/codercops/ogcops/issues/285) | [#287 — feat(templates): add interview Q&A quote card](https://github.com/codercops/ogcops/pull/287) | Merged (2026-10-28) | [Record](contributions/039-ogcops-287.md) |
+| 40 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#390 — feat(widget): add Italian locale](https://github.com/codercops/chatcops/pull/390) | Merged (2026-10-28) | [Record](contributions/040-chatcops-390.md) |
+| 41 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#396 — feat(widget): add Dutch locale](https://github.com/codercops/chatcops/pull/396) | Merged (2026-10-28) | [Record](contributions/041-chatcops-396.md) |
+| 42 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#407 — feat(widget): add Korean locale](https://github.com/codercops/chatcops/pull/407) | Merged (2026-10-28) | [Record](contributions/042-chatcops-407.md) |
+| 43 | ChatCops | [#389](https://github.com/codercops/chatcops/issues/389) | [#398 — feat(core): add Workers AI reranker](https://github.com/codercops/chatcops/pull/398) | Merged (2026-10-28) | [Record](contributions/043-chatcops-398.md) |
+| 44 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#409 — feat(widget): add Hebrew locale](https://github.com/codercops/chatcops/pull/409) | Merged (2026-10-28) | [Record](contributions/044-chatcops-409.md) |
+| 45 | ChatCops | [#55](https://github.com/codercops/chatcops/issues/55) | [#449 — feat(widget): translate disclosure in 11 locales](https://github.com/codercops/chatcops/pull/449) | Merged (2026-10-29) | [Record](contributions/045-chatcops-449.md) |
+| 46 | OGCops | [#301](https://github.com/codercops/ogcops/issues/301) | [#303 — feat(templates): add blog benchmark template](https://github.com/codercops/ogcops/pull/303) | Merged (2026-10-30) | [Record](contributions/046-ogcops-303.md) |
+| 47 | ChatCops | [#460](https://github.com/codercops/chatcops/issues/460) | [#473 — feat(widget): support CSP nonces for styles](https://github.com/codercops/chatcops/pull/473) | Merged (2026-10-30) | [Record](contributions/047-chatcops-473.md) |
+| 48 | Discord Bot | [#107](https://github.com/codercops/discord-bot/issues/107) | [#115 — fix: prevent duplicate concurrent check-ins](https://github.com/codercops/discord-bot/pull/115) | Merged (2026-10-31) | [Record](contributions/048-discord-bot-115.md) |
+| 49 | ChatCops | [#477](https://github.com/codercops/chatcops/issues/477) | [#504 — feat(widget): add copy action to completed replies](https://github.com/codercops/chatcops/pull/504) | Merged (2026-10-31) | [Record](contributions/049-chatcops-504.md) |
+| 50 | ChatCops | [#519](https://github.com/codercops/chatcops/issues/519) | [#524 — feat(server): configure webhook delivery retries](https://github.com/codercops/chatcops/pull/524) | Merged (2026-10-31) | [Record](contributions/050-chatcops-524.md) |
+| 51 | ChatCops | [#525](https://github.com/codercops/chatcops/issues/525) | [#531 — fix(server): honor HTTP-date Retry-After values](https://github.com/codercops/chatcops/pull/531) | Merged (2026-10-31) | [Record](contributions/051-chatcops-531.md) |
+| 52 | ChatCops | [#529](https://github.com/codercops/chatcops/issues/529) | [#533 — fix(widget): validate auto-open delay range](https://github.com/codercops/chatcops/pull/533) | Merged (2026-10-31) | [Record](contributions/052-chatcops-533.md) |
 
 ## Open pull requests
 
-### OGCops #287 — Interview Q&A quote card
+Current open work is listed below. OGCops #287 was merged on 28 October and appears in contribution #39.
 
-[PR #287](https://github.com/codercops/ogcops/pull/287) adds the interview Q&A template. The maintainer reports checks, 1,427 tests, and build passing, and requests two changes: truncate a long site name so it stays inside the card, and hide the answer divider when the question is empty. Linked issue [#285](https://github.com/codercops/ogcops/issues/285) is open.
+### ChatCops #539 — Invalid consent attributes
 
-[In-progress record](in-progress/001-ogcops-287-interview-qa-template.md)
+[PR #539](https://github.com/codercops/chatcops/pull/539) is open with changes requested. The maintainer says an invalid consent value must continue waiting (fail closed) and emit a warning; the current branch was asked to align tests and documentation with that behavior. It links issue [#536](https://github.com/codercops/chatcops/issues/536).
+
+[In-progress record](in-progress/001-chatcops-539.md)
+
+### ChatCops #538 — Script enum attributes
+
+[PR #538](https://github.com/codercops/chatcops/pull/538) validates documented values for data-mode, data-theme-mode, and data-position, falling back to defaults for invalid values. It is open and has no submitted review yet; linked issue [#532](https://github.com/codercops/chatcops/issues/532) is open.
+
+[In-progress record](in-progress/002-chatcops-538.md)
 
 ## CollabSpace is now an open-source project
 
 I have started developing [CollabSpace](https://github.com/piyusshhjangid/CollabSpace) publicly. Its contributor onboarding and project policies were added in merged [PR #16](https://github.com/piyusshhjangid/CollabSpace/pull/16), including contribution guidance, issue forms, pull request template, conduct and security guidance, and the MIT license.
 
-The initial public roadmap contains 13 issues (#3–#15). All 13 were open when checked, and none had discussion comments or a linked PR at that time. The issue directory has one consistent, detailed record per issue:
+The initial public roadmap contains 13 CollabSpace issues (#3–#15), all still open. The issue journal now also covers 13 newer issues I opened in ChatCops and Discord Bot (4 open, 9 closed), including their maintainer discussion and related PRs:
 
-- [CollabSpace issue journal](issues/README.md)
+- [Issue journal and complete issue index](issues/README.md)
 - [Issue #3 — API field-level validation errors](issues/001-collabspace-3.md)
 - [Issue #15 — roadmap tracker](issues/013-collabspace-15.md)
 

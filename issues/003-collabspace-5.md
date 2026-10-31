@@ -4,7 +4,7 @@
 
 - **Repository:** [piyusshhjangid/CollabSpace](https://github.com/piyusshhjangid/CollabSpace)
 - **Issue:** [#5 — [Security] Hash refresh tokens at rest and handle token reuse](https://github.com/piyusshhjangid/CollabSpace/issues/5)
-- **Status:** open (checked 27 October 2026)
+- **Status:** open (checked 1 November 2026)
 - **Created:** 2026-10-26
 - **Last updated:** 2026-10-26
 - **Labels:** `enhancement`

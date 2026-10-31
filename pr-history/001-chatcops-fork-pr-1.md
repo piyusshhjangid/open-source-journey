@@ -26,4 +26,4 @@ GitHub shows the PR closed without a merge commit and no submitted review or com
 
 ## 4. What this means for the contribution total
 
-The current authenticated GitHub search returned 41 authored pull requests: 37 merged, 1 open, and 3 closed without merge. This fork-side PR is one of the three unmerged records. The current merged work and open OGCops PR #287 are indexed in the [contribution journal](../CONTRIBUTION-JOURNAL.md); this attempt is not counted as a second completed contribution.
+The current authenticated GitHub search returned 57 authored pull requests: 52 merged, 2 open, and 3 closed without merge. This fork-side PR is one of the three unmerged records. Current merged work and open ChatCops PRs #538 and #539 are indexed in the [contribution journal](../CONTRIBUTION-JOURNAL.md); this attempt is not counted as a second completed contribution.

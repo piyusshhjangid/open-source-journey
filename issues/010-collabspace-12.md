@@ -4,7 +4,7 @@
 
 - **Repository:** [piyusshhjangid/CollabSpace](https://github.com/piyusshhjangid/CollabSpace)
 - **Issue:** [#12 — [AI] Add read-only recommendations grounded in project evidence](https://github.com/piyusshhjangid/CollabSpace/issues/12)
-- **Status:** open (checked 27 October 2026)
+- **Status:** open (checked 1 November 2026)
 - **Created:** 2026-10-26
 - **Last updated:** 2026-10-26
 - **Labels:** `enhancement`

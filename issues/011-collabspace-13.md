@@ -4,7 +4,7 @@
 
 - **Repository:** [piyusshhjangid/CollabSpace](https://github.com/piyusshhjangid/CollabSpace)
 - **Issue:** [#13 — [AI] Gate write actions with permissions, approval, and audit](https://github.com/piyusshhjangid/CollabSpace/issues/13)
-- **Status:** open (checked 27 October 2026)
+- **Status:** open (checked 1 November 2026)
 - **Created:** 2026-10-26
 - **Last updated:** 2026-10-26
 - **Labels:** `enhancement`
