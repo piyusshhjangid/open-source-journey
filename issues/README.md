@@ -2,16 +2,22 @@
 
 This folder tracks issues opened by [@piyusshhjangid](https://github.com/piyusshhjangid), linked contribution issues, and the initial CollabSpace public roadmap. Current status and issue discussions were checked on **1 November 2026**.
 
-The authored-issue search returned 26 issues across three repositories: 13 CollabSpace roadmap issues, plus 11 ChatCops and 2 Discord Bot issues. Of the newer 13 issues, 4 remain open and 9 are closed.
+The authored-issue search returned 32 issues across three repositories: 13 CollabSpace roadmap issues, plus 17 ChatCops and 2 Discord Bot issues. Of the 19 newer organization issues, 2 remain open and 17 are closed.
 
 ## ChatCops and Discord Bot issues opened during the latest contribution period
 
 | # | Issue | Repository | Status | Record |
 |---:|---|---|---|---|
+| 543 | [Widget: validate maxMessages before saving conversation history](https://github.com/codercops/chatcops/issues/543) | chatcops | Closed | [Record](543-chatcops-543.md) |
+| 544 | [Widget: report invalid inline container selectors clearly](https://github.com/codercops/chatcops/issues/544) | chatcops | Closed | [Record](544-chatcops-544.md) |
+| 550 | [Core: honor HTTP-date Retry-After values in provider retries](https://github.com/codercops/chatcops/issues/550) | chatcops | Closed | [Record](550-chatcops-550.md) |
+| 551 | [Core: release retryable response bodies before retrying](https://github.com/codercops/chatcops/issues/551) | chatcops | Closed | [Record](551-chatcops-551.md) |
+| 559 | [Server: block trailing-dot local webhook hostnames](https://github.com/codercops/chatcops/issues/559) | chatcops | Closed | [Record](559-chatcops-559.md) |
+| 560 | [Make the lint script expand package globs on Windows](https://github.com/codercops/chatcops/issues/560) | chatcops | Closed | [Record](560-chatcops-560.md) |
 | 542 | [Widget: validate data-history-ttl-days values](https://github.com/codercops/chatcops/issues/542) | chatcops | Open | [Record](014-chatcops-542.md) |
-| 536 | [Widget: ignore invalid data-wait-for-consent values](https://github.com/codercops/chatcops/issues/536) | chatcops | Open | [Record](015-chatcops-536.md) |
+| 536 | [Widget: ignore invalid data-wait-for-consent values](https://github.com/codercops/chatcops/issues/536) | chatcops | Closed | [Record](015-chatcops-536.md) |
 | 534 | [Widget: validate enum values from script-tag attributes](https://github.com/codercops/chatcops/issues/534) | chatcops | Closed | [Record](016-chatcops-534.md) |
-| 532 | [Widget: validate enum values from script-tag attributes](https://github.com/codercops/chatcops/issues/532) | chatcops | Open | [Record](017-chatcops-532.md) |
+| 532 | [Widget: validate enum values from script-tag attributes](https://github.com/codercops/chatcops/issues/532) | chatcops | Closed | [Record](017-chatcops-532.md) |
 | 529 | [Widget: validate autoOpen delay values](https://github.com/codercops/chatcops/issues/529) | chatcops | Closed | [Record](018-chatcops-529.md) |
 | 525 | [Server: honor HTTP-date Retry-After values for webhooks](https://github.com/codercops/chatcops/issues/525) | chatcops | Closed | [Record](019-chatcops-525.md) |
 | 520 | [Server: validate webhook signature tolerance](https://github.com/codercops/chatcops/issues/520) | chatcops | Closed | [Record](020-chatcops-520.md) |

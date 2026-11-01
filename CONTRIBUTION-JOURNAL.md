@@ -1,22 +1,22 @@
 # Open Source Contribution Journal
 
-This is the complete record of my open-source work: merged contributions, currently open pull requests, closed attempts, and issues in my own public project, CollabSpace.
+This is the complete record of my open-source work: merged contributions, closed attempts, and issues in my own public project, CollabSpace.
 
 **GitHub account:** [@piyusshhjangid](https://github.com/piyusshhjangid)
 **Status checked:** 1 November 2026 using GitHub-authored pull request search, PR metadata and descriptions, current reviews, CollabSpace issue pages, and issue comments.
 
 ## Snapshot
 
-- **52 merged PRs** across 7 repositories.
-- **2 open PRs:** ChatCops #538 and #539.
+- **60 merged PRs** across 7 repositories.
+- **0 open PRs:** ChatCops #538 and #539 have merged.
 - **3 closed without merge:** two fork-side ChatCops PRs and one superseded upstream ChatCops PR. They are kept in pr-history/ and excluded from the merged total.
 - **17 open authored issues:** 13 CollabSpace roadmap issues plus ChatCops #532, #536, #542 and Discord Bot #108.
-- GitHub's authored PR search returned **57 PRs** in total; the above outcomes account for all 57.
+- GitHub search previously returned 57 PRs. Six additional ChatCops PRs (#548, #549, #552, #553, #562, #565) merged afterward, and the two previously open PRs (#538 and #539) merged as well. Current total: 60 merged, 0 open, and 3 closed without merge (63 PRs).
 
 ### Merged contributions by repository
 
 - **free-llm-api-hub:** 1
-- **ChatCops:** 30
+- **ChatCops:** 38
 - **OGCops:** 14
 - **Toolbelt:** 2
 - **Discord Bot:** 2
@@ -82,27 +82,24 @@ Each merged PR has its own record in contributions/. Validation notes come from 
 | 51 | ChatCops | [#525](https://github.com/codercops/chatcops/issues/525) | [#531 — fix(server): honor HTTP-date Retry-After values](https://github.com/codercops/chatcops/pull/531) | Merged (2026-10-31) | [Record](contributions/051-chatcops-531.md) |
 | 52 | ChatCops | [#529](https://github.com/codercops/chatcops/issues/529) | [#533 — fix(widget): validate auto-open delay range](https://github.com/codercops/chatcops/pull/533) | Merged (2026-10-31) | [Record](contributions/052-chatcops-533.md) |
 
+| 53 | ChatCops | [#532](https://github.com/codercops/chatcops/issues/532) | [#538 — fix(widget): validate script enum attributes](https://github.com/codercops/chatcops/pull/538) | Merged (2026-10-31) | [Record](contributions/053-chatcops-538.md) |
+| 54 | ChatCops | [#536](https://github.com/codercops/chatcops/issues/536) | [#539 — fix(widget): ignore invalid consent attributes](https://github.com/codercops/chatcops/pull/539) | Merged (2026-10-31) | [Record](contributions/054-chatcops-539.md) |
+| 55 | ChatCops | [#543](https://github.com/codercops/chatcops/issues/543) | [#548 — Widget: validate maxMessages before saving conversation history](https://github.com/codercops/chatcops/pull/548) | Merged (2026-10-31) | [Record](contributions/055-chatcops-548.md) |
+| 56 | ChatCops | [#544](https://github.com/codercops/chatcops/issues/544) | [#549 — fix(widget): report invalid container selectors](https://github.com/codercops/chatcops/pull/549) | Merged (2026-10-31) | [Record](contributions/056-chatcops-549.md) |
+| 57 | ChatCops | [#551](https://github.com/codercops/chatcops/issues/551) | [#553 — fix(core): cancel retryable response bodies](https://github.com/codercops/chatcops/pull/553) | Merged (2026-10-31) | [Record](contributions/057-chatcops-553.md) |
+| 58 | ChatCops | [#550](https://github.com/codercops/chatcops/issues/550) | [#552 — fix(core): honor HTTP-date Retry-After values](https://github.com/codercops/chatcops/pull/552) | Merged (2026-10-31) | [Record](contributions/058-chatcops-552.md) |
+| 59 | ChatCops | [#559](https://github.com/codercops/chatcops/issues/559) | [#562 — fix(server): block trailing-dot local webhook hosts](https://github.com/codercops/chatcops/pull/562) | Merged (2026-10-31) | [Record](contributions/059-chatcops-562.md) |
+| 60 | ChatCops | [#560](https://github.com/codercops/chatcops/issues/560) | [#565 — fix: expand lint package paths on Windows](https://github.com/codercops/chatcops/pull/565) | Merged (2026-10-31) | [Record](contributions/060-chatcops-565.md) |
+
 ## Open pull requests
 
-Current open work is listed below. OGCops #287 was merged on 28 October and appears in contribution #39.
-
-### ChatCops #539 — Invalid consent attributes
-
-[PR #539](https://github.com/codercops/chatcops/pull/539) is open with changes requested. The maintainer says an invalid consent value must continue waiting (fail closed) and emit a warning; the current branch was asked to align tests and documentation with that behavior. It links issue [#536](https://github.com/codercops/chatcops/issues/536).
-
-[In-progress record](in-progress/001-chatcops-539.md)
-
-### ChatCops #538 — Script enum attributes
-
-[PR #538](https://github.com/codercops/chatcops/pull/538) validates documented values for data-mode, data-theme-mode, and data-position, falling back to defaults for invalid values. It is open and has no submitted review yet; linked issue [#532](https://github.com/codercops/chatcops/issues/532) is open.
-
-[In-progress record](in-progress/002-chatcops-538.md)
+There are currently no open pull requests. ChatCops #538 and #539 merged on October 31; both records appear in the merged contribution index.
 
 ## CollabSpace is now an open-source project
 
 I have started developing [CollabSpace](https://github.com/piyusshhjangid/CollabSpace) publicly. Its contributor onboarding and project policies were added in merged [PR #16](https://github.com/piyusshhjangid/CollabSpace/pull/16), including contribution guidance, issue forms, pull request template, conduct and security guidance, and the MIT license.
 
-The initial public roadmap contains 13 CollabSpace issues (#3–#15), all still open. The issue journal now also covers 13 newer issues I opened in ChatCops and Discord Bot (4 open, 9 closed), including their maintainer discussion and related PRs:
+The initial public roadmap contains 13 CollabSpace issues (#3–#15), all still open. The issue journal also covers 19 issues I opened in ChatCops and Discord Bot (2 open and 17 closed), with current statuses and linked PRs:
 
 - [Issue journal and complete issue index](issues/README.md)
 - [Issue #3 — API field-level validation errors](issues/001-collabspace-3.md)
